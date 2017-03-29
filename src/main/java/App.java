@@ -18,9 +18,12 @@ public class App{
     Map<String, Object> model = new HashMap<String, Object>();
     String name=request.queryParams("nameOfCuisine");
     Cuisine theirCuisine = new Cuisine (name);
+    model.put("Cuisine",theirCuisine);
     model.put("template", "templates/CuisineMainPage.vtl");
     return new ModelAndView(model, layout);
   }, new VelocityTemplateEngine());
+
+
 
   }
 }

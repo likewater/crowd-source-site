@@ -7,6 +7,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public class CuisineTest{
+
+  
+
   @Test
   public void CuisineInstantiate_True(){
     Cuisine testCuisine = new Cuisine("Peruvian");

@@ -1,14 +1,24 @@
 
-
+<!-- 404 -->
 <!-- /Cuisine    -->
 <h3>View all cuisines</h3>
+  <!-- eventually display all  -->
+  #if ($Cuisine)
+    #foreach ($Cuisine in $Cuisines)
+    <p>$Cuisine.getName()</p>
+    #end
+  #else
+  #end
+
+  <p>
+    no cuisines to show
+  </p>
+
 <h3>Add a cuisine </h3>
-
-
-<form action="/cuisine" method="post">
+<form action="/Cuisine" >
   <div class="form-control">
     <label for="nameOfCuisine">Name of cuisine</label>
-    <input type="" name="nameOfCuisine" value="nameOfCuisine" placeholder="name of cuisine">
+    <input type="" name="nameOfCuisine" id="nameOfCuisine" >
   </div>
   <button type="submit" class="btn btn-success" >Add Cuisine </button>
 </form>
