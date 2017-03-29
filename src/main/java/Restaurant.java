@@ -15,8 +15,9 @@ public class Restaurant{
     this.address=address;
     this.url=url;
     this.review=review;
-    this.rating=raitng;
+    this.rating=rating;
   }
+
   public String getName(){
     return nameOfRestaurant;
   }
@@ -29,15 +30,23 @@ public class Restaurant{
     return url;
   }
 
-}
+  public String getReview(){
+    return review;
+  }
 
-@Override
- public boolean equals(Object otherCategory) {
-   if (!(otherCategory instanceof Category)) {
-     return false;
-   } else {
-     Category newCategory = (Category) otherCategory;
-     return this.getName().equals(newCategory.getName()) &&
-            this.getId() == newCategory.getId();
-   }
+  public int getRAting(){
+    return rating;
+  }
+
+
+  // @Override
+  //  public boolean equals(Object otherCategory) {
+  //    if (!(otherCategory instanceof Category)) {
+  //      return false;
+  //    } else {
+  //      Category newCategory = (Category) otherCategory;
+  //      return this.getName().equals(newCategory.getName()) &&
+  //             this.getId() == newCategory.getId();
+  //    }
+  //  }
  }
